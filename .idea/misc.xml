@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable-v24/gradient_colortext.xml" value="0.38055555555555554" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/btn_click.xml" value="0.38055555555555554" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/btn_hover.xml" value="0.38055555555555554" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/corner_radious_bg.xml" value="0.3489583333333333" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/gradient_color.xml" value="0.35" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/ic_baseline_local_phone_24.xml" value="0.3333333333333333" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.4046875" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/ic_facebook_3_1.xml" value="0.38055555555555554" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/ic_google_icon_1.xml" value="0.38055555555555554" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/ic_launcher_background.xml" value="0.27760416666666665" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/ic_menu.xml" value="0.35" />
+        <entry key="..\:/FigmaTask/app/src/main/res/drawable/image_gradient.xml" value="0.38055555555555554" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/activity_drawer_example.xml" value="0.2" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/activity_home_screen.xml" value="0.33" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/activity_live_data.xml" value="0.5322916666666667" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/activity_sign_screen.xml" value="0.33" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/drawer_menu.xml" value="0.3269927536231884" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/fragment_box_office.xml" value="0.3" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/fragment_comming_soon.xml" value="0.3140625" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/fragment_theater.xml" value="0.3140625" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/genres_item.xml" value="0.5" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/item_options.xml" value="0.3269927536231884" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/main.xml" value="0.31354166666666666" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/nav_header.xml" value="0.67" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/popup.xml" value="0.31354166666666666" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/video_progress.xml" value="0.31354166666666666" />
+        <entry key="..\:/FigmaTask/app/src/main/res/layout/view_pager_item.xml" value="0.33" />
+        <entry key="..\:/FigmaTask/app/src/main/res/menu/nav_menu.xml" value="0.3338541666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

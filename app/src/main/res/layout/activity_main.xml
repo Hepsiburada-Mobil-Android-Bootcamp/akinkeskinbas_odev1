@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <Button
+
+            android:id="@+id/figmaScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/figmaexample"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+
+            android:id="@+id/liveDataExample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/livedataexample"
+            app:layout_constraintTop_toBottomOf="@+id/figmaScreen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+
+            android:id="@+id/figmaDrawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/drawerexample"
+            app:layout_constraintTop_toBottomOf="@+id/liveDataExample"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <Button
+
+            android:id="@+id/signIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Screen"
+            app:layout_constraintTop_toBottomOf="@+id/figmaDrawer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

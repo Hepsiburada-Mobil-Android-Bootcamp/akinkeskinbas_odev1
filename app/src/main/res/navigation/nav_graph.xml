@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/frag_home">
+
+    <fragment
+        android:id="@+id/frag_profile"
+        android:name="com.akin.figmatask.BoxOfficeFragment"
+        android:label="fragment_box_office"
+        tools:layout="@layout/fragment_box_office" />
+    <fragment
+        android:id="@+id/frag_settings"
+        android:name="com.akin.figmatask.ComingSoonFragment"
+        android:label="fragment_comming_soon"
+        tools:layout="@layout/fragment_comming_soon" />
+    <fragment
+        android:id="@+id/frag_home"
+        android:name="com.akin.figmatask.TheaterFragment"
+        android:label="fragment_theater"
+        tools:layout="@layout/fragment_theater" />
+</navigation>

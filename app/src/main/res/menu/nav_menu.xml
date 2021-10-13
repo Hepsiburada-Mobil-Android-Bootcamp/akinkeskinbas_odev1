@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+
+        android:icon="@drawable/ic_baseline_person_24"
+        android:id="@+id/frag_home"
+        android:title="My Doctors"
+        />
+
+    <item
+        android:icon="@drawable/ic_baseline_book_24"
+        android:id="@+id/frag_profile"
+        android:title="Medical Records"
+        />
+
+    <item
+        android:icon="@drawable/ic_baseline_payment_24"
+        android:id="@+id/frag_payments"
+        android:title="Payments"
+        />
+
+    <item
+        android:icon="@drawable/ic_baseline_edit_calendar_24"
+        android:id="@+id/frag_booking"
+        android:title="Test Bookings"
+
+        />
+    <item
+        android:icon="@drawable/ic_baseline_privacy_tip_24"
+        android:id="@+id/frag_privacy"
+        android:title="Privacy Policy"
+        />
+    <item
+        android:icon="@drawable/ic_baseline_help_24"
+        android:id="@+id/frag_help"
+        android:title="Help Center"
+        />
+    <item
+        android:icon="@drawable/ic_baseline_medical_services_24"
+        android:id="@+id/frag_settings"
+        android:title="Settings"
+        />
+
+</menu>
