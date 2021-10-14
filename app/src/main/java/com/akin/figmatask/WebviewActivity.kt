@@ -12,7 +12,7 @@ import android.view.View
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 
-class MyActivity() : AppCompatActivity() {
+class WebviewActivity() : AppCompatActivity() {
     private var webView: WebView? = null
     private var customViewContainer: FrameLayout? = null
     private var customViewCallback: CustomViewCallback? = null
@@ -113,7 +113,7 @@ class MyActivity() : AppCompatActivity() {
 
         override fun getVideoLoadingProgressView(): View? {
             if (mVideoProgressView == null) {
-                val inflater = LayoutInflater.from(this@MyActivity)
+                val inflater = LayoutInflater.from(this@WebviewActivity)
                 mVideoProgressView = inflater.inflate(R.layout.video_progress, null)
             }
             return mVideoProgressView

@@ -23,7 +23,7 @@
            />
         <activity
             android:screenOrientation="landscape"
-            android:name=".MyActivity"
+            android:name=".WebviewActivity"
             android:exported="true"
             />
         <activity

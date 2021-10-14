@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.webkit.WebView
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
@@ -21,10 +20,9 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class HomeScreen : AppCompatActivity() {
 
-    companion object{
-        var url: String ?= null
+    companion object {
+        var url: String? = null
     }
-
 
 
     private val viewPager by lazy { findViewById<ViewPager2>(R.id.m_viewPager) }
@@ -58,7 +56,7 @@ class HomeScreen : AppCompatActivity() {
             "Interstellar",
             "Ghost in The Shell",
 
-        )
+            )
         val movieIdList = listOf(
             "tt0437086",
             "tt0437086",
@@ -70,6 +68,7 @@ class HomeScreen : AppCompatActivity() {
 
 
 
+
         //ViewPager Logics
 
         viewPager.clipToPadding = false
@@ -78,23 +77,21 @@ class HomeScreen : AppCompatActivity() {
         viewPager.getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
 
         viewPager.setPageTransformer(rotate)
-        viewPager.adapter = CustomViewPager(images,names) {
+        viewPager.adapter = CustomViewPager(images, names) {
 
-           showDialog(names[it])
+            showDialog(names[it])
         }
-        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback(){
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 getCurrentData(movieIdList[position])
 
-                when(position){
+                when (position) {
                     position -> homeScreenLayout.setBackgroundResource(images[position])
 
                 }
             }
         })
-
-
 
 
     }
@@ -110,7 +107,7 @@ class HomeScreen : AppCompatActivity() {
     }
 
 
-    private fun getCurrentData(movieId:String) {
+    private fun getCurrentData(movieId: String) {
         val api =
             Retrofit.Builder().baseUrl(Base_Url).addConverterFactory(GsonConverterFactory.create())
                 .build().create(SimpleApi::class.java)
@@ -119,13 +116,14 @@ class HomeScreen : AppCompatActivity() {
             val response = api.getPost(movieId).awaitResponse()
             val data = response.body()?.linkEmbed
 
-            withContext(Dispatchers.Main){
+            withContext(Dispatchers.Main) {
                 url = data ?: "https://www.imdb.com/video/imdb/vi2959588889/imdb/embed"
 
             }
         }
     }
-    private fun showDialog(movieName:String){
+
+    private fun showDialog(movieName: String) {
 
         val builder = AlertDialog.Builder(this)
 
@@ -134,14 +132,14 @@ class HomeScreen : AppCompatActivity() {
         builder.setMessage("Do you want to watch trailer ?")
         builder.setIcon(android.R.drawable.ic_menu_help)
 
-        builder.setPositiveButton("Yes"){dialogInterface, which ->
-            val intent = Intent(this, MyActivity::class.java)
-            intent.putExtra("url",url)
+        builder.setPositiveButton("Yes") { dialogInterface, which ->
+            val intent = Intent(this, WebviewActivity::class.java)
+            intent.putExtra("url", url)
 
             startActivity(intent)
         }
 
-        builder.setNegativeButton("No"){dialogInterface, which ->
+        builder.setNegativeButton("No") { dialogInterface, which ->
             dialogInterface.dismiss()
         }
 
@@ -149,7 +147,6 @@ class HomeScreen : AppCompatActivity() {
         alertDialog.setCancelable(false)
         alertDialog.show()
     }
-
 
 
 }

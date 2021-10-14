@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">FigmaTask</string>
     <string name="figmaexample">FigmaExample</string>
-    <string name="livedataexample">LiveDataExample</string>
+    <string name="livedataexample">LiveChatBot</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="theaterfragment">My Doctors</string>
