@@ -1,12 +1,12 @@
 # Hepsiburada Mobil Android Bootcamp Task1
 
-## Task:
+## Tasks:
 
 Choose 2 designs from figma and make them beautiful.
 
 Use live data with your own design and make them beautiful.
 
-# Tasks
+
 
 ## Choosen design:
   <img src="https://user-images.githubusercontent.com/58655582/137186142-4a28b10f-0c29-4905-a694-242cefb120c8.png" width="380" height="790">
